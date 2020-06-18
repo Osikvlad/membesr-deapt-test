@@ -4,10 +4,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <a href="{{route('members.index')}}" class="btn btn-outline-info w-100"><strong>Сотрудники</strong></a>
+                    <a href="{{route('departments.index')}}" class="btn btn-outline-info w-100"><strong>Отделы</strong></a>
                 </div>
                 <div class="col-6">
-                    <a href="{{route('departments.index')}}" class="btn btn-outline-info w-100"><strong>Отделы</strong></a>
+                    <a href="{{route('members.index')}}" class="btn btn-outline-info w-100"><strong>Сотрудники</strong></a>
                 </div>
                 <div class="my-3 col-12">
                     <h1>Сетка</h1>
