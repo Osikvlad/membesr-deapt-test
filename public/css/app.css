@@ -1,0 +1,32 @@
+.flash-message{
+    min-width: 100%;
+    z-index: 22;
+    text-align: center;
+}
+.message-danger{
+    color: #ffffff;
+    background-color: #ef0c06;
+    border-color: #ff0500;
+    font-size: 14pt;
+}
+.message-success{
+    color: #ffffff;
+    background-color: #3fff00ad;;
+    border-color: #62ff00;
+    font-size: 14pt;
+}
+.main-table {
+    width: 300px;
+    border-collapse: collapse;
+}
+.main-table td {
+    padding: 5px;
+    border: 1px solid #0000005c;
+}
+.main-table th {
+    border: 1px solid #0000005c;
+    padding: 5px;
+}
+.table-bg{
+    background: #fcc800;
+}
