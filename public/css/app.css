@@ -30,3 +30,7 @@
 .table-bg{
     background: #fcc800;
 }
+.invalid{
+    color: red;
+    font-weight:600;
+}

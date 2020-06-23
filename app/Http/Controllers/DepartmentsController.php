@@ -82,11 +82,16 @@ class DepartmentsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(DeptRequest $request, $id)
+    public function update(Request $request, $id)
     {
-        $this->departmentHelper->update($request->all(), $id);
+        try {
+            $this->departmentHelper->update($request->all(), $id);
+            return redirect()->to(route('departments.index'))->with('info', 'Отдел изменен');
 
-        return redirect()->to(route('departments.index'))->with('info', 'Отдел изменен');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', $e->getMessage());
+        }
+
     }
 
     /**

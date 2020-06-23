@@ -29,7 +29,7 @@ class MemberRequest extends FormRequest
             'last_name' => 'required',
             'middle_name' => 'required',
             'gender' => 'required',
-            'salary' => 'required',
+            'salary' => 'required|numeric',
             'departments' => 'required'
         ];
     }
@@ -42,6 +42,7 @@ class MemberRequest extends FormRequest
             'middle_name.required' => 'Необходимо указать отчество',
             'gender.required' => 'Необходимо выбрать пол',
             'salary.required' => 'Необходимо указать зарплату',
+            'salary.numeric' => 'Необходимо указать числовое значение (Пример: 1111.11)',
             'departments.required' => 'Необходимо выбрать отдел'
         ];
     }

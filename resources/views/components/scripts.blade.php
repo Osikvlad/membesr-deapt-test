@@ -9,3 +9,48 @@
 <script>
     $('select').selectpicker();
 </script>
+<script>
+    function validate()
+    {
+        var firstName = document.forms["submit-form"]["first_name"].value;
+        var lastName = document.forms["submit-form"]["last_name"].value;
+        var middleName = document.forms["submit-form"]["middle_name"].value;
+        var gender = document.forms["submit-form"]["gender"].value;
+        var salary = document.forms["submit-form"]["salary"].value;
+        var department = document.forms["submit-form"]["departments[]"].value;
+        if(firstName == "" || lastName == "" || middleName == "" || gender == "" || salary == "" || department == ""){
+            if(firstName == ""){
+                document.getElementById('invalid_first_name').classList.remove('d-none');
+            } else {
+                document.getElementById('invalid_first_name').classList.add('d-none');
+            }
+            if(lastName == ""){
+                document.getElementById('invalid_last_name').classList.remove('d-none');
+            } else {
+                document.getElementById('invalid_last_name').classList.add('d-none');
+            }
+            if(middleName == ""){
+                document.getElementById('invalid_middle_name').classList.remove('d-none');
+            } else {
+                document.getElementById('invalid_middle_name').classList.add('d-none');
+            }
+            if(gender == ""){
+                document.getElementById('invalid_gender_name').classList.remove('d-none');
+            } else {
+                document.getElementById('invalid_gender_name').classList.add('d-none');
+            }
+            if(salary == ""){
+                document.getElementById('invalid_salary_name').classList.remove('d-none');
+            } else {
+                document.getElementById('invalid_salary_name').classList.add('d-none');
+            }
+            if(department == ""){
+                document.getElementById('invalid_department_name').classList.remove('d-none');
+            } else {
+                document.getElementById('invalid_department_name').classList.add('d-none');
+            }
+            return false;
+        }
+
+    }
+</script>

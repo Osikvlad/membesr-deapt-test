@@ -50,7 +50,7 @@ class MembersController extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(MemberRequest $request)
+    public function store(Request $request)
     {
         $this->memberHelper->store($request->all());
 

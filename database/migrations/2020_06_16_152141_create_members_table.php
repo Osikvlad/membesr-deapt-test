@@ -19,7 +19,7 @@ class CreateMembersTable extends Migration
             $table->string('last_name');
             $table->string('middle_name');
             $table->string('gender');
-            $table->string('salary');
+            $table->decimal('salary', 20,2);
             $table->timestamps();
         });
     }
